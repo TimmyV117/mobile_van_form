@@ -17,19 +17,22 @@
 		<div class="wrap-contact100">
 			<form class="contact100-form validate-form">
 				<span class="contact100-form-title">
-					Mobile Van Services
+					Mobile Van Service Entry
 				</span>
 
+				Driver Goodyear ID:
 				<div class="wrap-input100 validate-input" data-validate="Please enter your Id">
 					<input class="input100" type="text" name="name" placeholder="Goodyear Id">
 					<span class="focus-input100"></span>
 				</div>
 
+				Service Date:
 				<div class="wrap-input100 validate-input" data-validate="Please enter Date">
 					<input class="input100" type="date" name="name" placeholder="Start Time">
 					<span class="focus-input100"></span>
 				</div>
 
+				Service Start Time:
 				<div class="wrap-input100 validate-input" data-validate="Please enter Time">
 					<input class="input100" type="Time" name="name" placeholder="Start Time">
 					<span class="focus-input100"></span>
@@ -41,15 +44,21 @@
 
 				<div>
 				
-  					Location:<br><input type="checkbox" name="gender" value="male" checked> Culver City<br>
+  					Location:<br><input type="radio" name="gender" value="male" checked> Culver City<br>
 				 <br>
 				</div>
 
 				<div>
 					
 					<!-- <input class="input100" type="Time" name="name" placeholder="Start Time"> -->
+					<div>
+						<h1>
+							Vehicle
+						</h1>
+					</div>
 					
-					Select Car:<select class= "wrap-input100 validate-input" name="drop1" id="drop1">
+
+					Tesloop Car Name:<select class= "wrap-input100 validate-input" name="drop1" id="drop1">
 						<option value="Rx">REX</option>
   						<option value="Dxy">Duexy</option>
  					 	<option value="Bvo">Bravo</option>
@@ -68,7 +77,7 @@
 					
 					<!-- <input class="input100" type="Time" name="name" placeholder="Start Time"> -->
 					
-					Model:<select class= "wrap-input100 validate-input" name="drop1" id="drop1">
+					Vehicle Model:<select class= "wrap-input100 validate-input" name="drop1" id="drop1">
 						<option value="3">Model 3</option>
   						<option value="X">Model X</option>
  					 	<option value="S">Model S</option>
@@ -77,46 +86,64 @@
 					<!-- <span class="focus-input100"></span> -->
 				</div>
 
+				Vehicle Year:
 				<div class="wrap-input100 validate-input" data-validate="Please Select Vehicle Year">
 					<input class="input100" type="text" name="name" placeholder="Vehicle Year">
 					<span class="focus-input100"></span>
 				</div>
 
+				Vehicle Odometer (mi):
 				<div class="wrap-input100 validate-input" data-validate="Please Select Odometer">
 					<input class="input100" type="text" name="name" placeholder="Odometer">
 					<span class="focus-input100"></span>
 				</div>
 
+				<div>
+					<h1>
+						Tire
+					</h1>
+				</div>
+					
+				Tire Brand:
 				<div class="wrap-input100 validate-input" data-validate="Please Select Tire Brand">
-					<input class="input100" type="text" name="name" placeholder="Tire Brand">
+					<input class="input100" type="text" name="name" placeholder="E.g. Goodyear, Bridgestone, Michelin, etc.">
 					<span class="focus-input100"></span>
 				</div>
 
+				Tire Model:
 				<div class="wrap-input100 validate-input" data-validate="Please Select Tire Model">
-					<input class="input100" type="text" name="name" placeholder="Tire Model">
+					<input class="input100" type="text" name="name" placeholder="E.g. Assurance">
 					<span class="focus-input100"></span>
 				</div>
-
+	
+				FRONT Tire Size:
 				<div class="wrap-input100 validate-input" data-validate="Please Select  Tire Size Front">
-					<input class="input100" type="text" name="name" placeholder="Tire Size Front">
+					<input class="input100" type="text" name="name" placeholder="E.g. 245/60R16 (Front created to address vehicles with staggered fitment)">
 					<span class="focus-input100"></span>
 				</div>
 
+				REAR Tire Size:
 				<div class="wrap-input100 validate-input" data-validate="Please Select Tire Size Rear">
-					<input class="input100" type="text" name="name" placeholder="Tire Size Rear">
+					<input class="input100" type="text" name="name" placeholder="E.g. 245/60R16 (Rear created to address vehicles with staggered fitment)">
 					<span class="focus-input100"></span>
 				</div>
 
 				<div>
-					Services:<table class="responsive-table-input-matrix">
+					<h1>
+						Service
+					</h1>
+				</div>
+
+				<div>
+					What services were performed for each tire position?<table class="responsive-table-input-matrix">
 						<thead>
 							<tr>
 								<th></th>
 								<th>Inspection</th>
 								<th>Replacement</th>
 								<th>Repair</th>
-								<th>Break Replacement</th>
-								<th>Wheel/Rim refurbish</th>
+								<th>Brake Replacement</th>
+								<th>Wheel/Rim Refurbish</th>
 								<th>None</th>
 								<th>Other</th>
 								
@@ -124,7 +151,7 @@
 						</thead>
 						<tbody>
 							<tr>
-								<td>LF</td>
+								<td>Left FRONT</td>
 								<td><input type="checkbox"></td>
 								<td><input type="checkbox"></td>
 								<td><input type="checkbox"></td>
@@ -135,7 +162,7 @@
 								
 							</tr>
 							<tr>
-								<td>LR</td>
+								<td>Left REAR</td>
 								<td><input type="checkbox"></td>
 								<td><input type="checkbox"></td>
 								<td><input type="checkbox"></td>
@@ -146,7 +173,7 @@
 								<td><input type="checkbox"></td>
 							</tr>
 							<tr>
-							<td>RF</td>
+							<td>Right FRONT</td>
 								<td><input type="checkbox"></td>
 								<td><input type="checkbox"></td>
 								<td><input type="checkbox"></td>
@@ -157,7 +184,7 @@
 								
 							</tr>
 							<tr>
-								<td>RR</td>
+								<td>Right REAR</td>
 								<td><input type="checkbox"></td>
 								<td><input type="checkbox"></td>
 								<td><input type="checkbox"></td>
@@ -174,7 +201,7 @@
 				</div>
 				<br>
 				<div>
-					Other Services:<table class="responsive-table-input-matrix">
+					Other Services: What other services, if any, were performed?<table class="responsive-table-input-matrix">
 						<thead>
 							<tr>
 								<th></th>
@@ -187,7 +214,7 @@
 						</thead>
 						<tbody>
 							<tr>
-								<td>LF</td>
+								<td>Left FRONT</td>
 								<td><input type="checkbox"></td>
 								<td><input type="checkbox"></td>
 								<td><input type="checkbox"></td>
@@ -196,7 +223,7 @@
 								
 							</tr>
 							<tr>
-								<td>LR</td>
+								<td>Left REAR</td>
 								<td><input type="checkbox"></td>
 								<td><input type="checkbox"></td>
 								<td><input type="checkbox"></td>
@@ -204,7 +231,7 @@
 								
 							</tr>
 							<tr>
-							<td>RF</td>
+							<td>Right FRONT</td>
 								<td><input type="checkbox"></td>
 								<td><input type="checkbox"></td>
 								<td><input type="checkbox"></td>
@@ -213,7 +240,7 @@
 								
 							</tr>
 							<tr>
-								<td>RR</td>
+								<td>Right REAR</td>
 								<td><input type="checkbox"></td>
 								<td><input type="checkbox"></td>
 								<td><input type="checkbox"></td>
@@ -227,6 +254,70 @@
 
 				</div>
 				<br>
+
+
+				<br>
+				<br>
+				Question 1: If inspected, is there any visual damage or irregular wear? Please describe.
+				<div class="wrap-input100 validate-input" data-validate="Please Select  Tire Size Front">
+					<input class="input100" type="text" name="name" placeholder="Enter text">
+					<span class="focus-input100"></span>
+				</div>
+
+				<br>
+				Question 2: If tire was replaced, please describe the issue.
+				<div class="wrap-input100 validate-input" data-validate="Please Select  Tire Size Front">
+					<input class="input100" type="text" name="name" placeholder="Enter text">
+					<span class="focus-input100"></span>
+				</div>
+
+				<br>
+				Question 3: If tire was replaced, what is the new tire brand?
+				<div class="wrap-input100 validate-input" data-validate="Please Select  Tire Size Front">
+					<input class="input100" type="text" name="name" placeholder="Enter text">
+					<span class="focus-input100"></span>
+				</div>
+
+				<br>
+
+				Question 4: If tire was repaired, please describe the issue.
+				<div class="wrap-input100 validate-input" data-validate="Please Select  Tire Size Front">
+					<input class="input100" type="text" name="name" placeholder="Enter text">
+					<span class="focus-input100"></span>
+				</div>
+
+				Question 5: If tire was rotated, what rotation pattern was used?
+				<div>
+  					<br>
+                    	<input type="radio" name="car" value="rotation" > Rearward Cross<br>
+                    	<input type="radio" name="car" value="rotation" > Forward Cross<br>
+                    	<input type="radio" name="car" value="rotation" > X-Pattern<br>
+					<br>
+				</div>
+				<br>
+
+					<div>
+						<h1>
+							Final
+						</h1>
+					</div>
+					
+				<br>
+			    Notes:	
+				<div class="wrap-input100 validate-input" data-validate="">
+                    
+                    <textarea rows="6" cols="102"></textarea>
+					<span class="focus-input100"></span>
+				</div>
+
+
+				Service End Time:
+				<div class="wrap-input100 validate-input" data-validate="Please enter Time">
+					<input class="input100" type="Time" name="name" placeholder="End Time">
+					<span class="focus-input100"></span>
+				</div>
+
+
 
 				<div class="container-contact100-form-btn">
 					<button class="contact100-form-btn">

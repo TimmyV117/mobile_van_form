@@ -29,6 +29,7 @@
 	box-sizing: border-box;
 }
 
+
 body, html {
 	height: 100%;
 	font-family: SourceSansPro-Regular, sans-serif;
@@ -170,7 +171,7 @@ iframe {
 }
 
 .wrap-contact100 {
-  width: 800px;
+  width: 930px;
   background: #fff;
   border-radius: 10px;
   overflow: hidden;
@@ -227,13 +228,15 @@ iframe {
 
 /*---------------------------------------------*/
 input.input100 {
-  height: 62px;
+  height: 30px;
+    border-bottom: 1px solid black;*/
   padding: 0 20px 0 23px;
 }
 
 
 textarea.input100 {
   min-height: 199px;
+/*    border-bottom: 1px solid black;*/
   padding: 19px 20px 0 23px;
 }
 
@@ -262,11 +265,7 @@ textarea.input100 {
 }
 
 .input100:focus + .focus-input100 {
-  box-shadow: 0 5px 20px 0px rgba(0, 0, 0, 0.15);
-  -moz-box-shadow: 0 5px 20px 0px rgba(0, 0, 0, 0.15);
-  -webkit-box-shadow: 0 5px 20px 0px rgba(0, 0, 0, 0.15);
-  -o-box-shadow: 0 5px 20px 0px rgba(0, 0, 0, 0.15);
-  -ms-box-shadow: 0 5px 20px 0px rgba(0, 0, 0, 0.15);
+s
 }
 
 /*------------------------------------------------------------------
@@ -458,7 +457,7 @@ only screen and (max-width: 760px),
   .responsive-table-input-matrix {
     display: block;
     position: relative;
-    width: 100%;
+    width: 50%;
 
     &:after {
       clear: both;
