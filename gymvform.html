@@ -1,0 +1,206 @@
+<DOCTYPE! html>
+    
+<html>
+    <head>
+        <title>Mobile Van Service Entry</title>
+    </head>
+    <body>
+        <h1>Mobile Van Service Entry</h1>
+        <hr>
+        <form>
+            Driver Goodyear ID:<br>
+            <input type="text"><br><br>
+        
+            Service Date:<br>
+            <input type="date"><br><br>
+            
+            Service Start PST:<br>
+            <input type="time"><br><br>
+        
+            Location:<br>
+            <input type="radio" id="culvercity"
+                   name="Location"
+                   value="CulverCity"
+                   checked>
+            <label for="CulverCity">Culver City</label><br><br><br>
+        
+            <div>
+                <h2>Vehicle</h2>
+                Tesloop Car Name:<br>
+                <input type="radio" id="hihosilver"
+                    name="Tesloop_car_name"
+                    value="HiHo_silver">
+                <label for="hihosilver">HiHo Silver</label><br>
+
+                 <input type="radio" id="toro"
+                    name="Tesloop_car_name"
+                    value="Toro">
+                <label for="toro">Toro</label><br>
+
+                <input type="radio" id="ruby"
+                    name="Tesloop_car_name"
+                    value="Ruby">
+                <label for="ruby">Ruby</label><br>
+
+                <input type="radio" id="duke"
+                    name="Tesloop_car_name"
+                    value="Duke">
+                <label for="duke">Duke</label><br>
+
+                <input type="radio" id="ehawk"
+                    name="Tesloop_car_name"
+                    value="eHawk">
+                <label for="ehawk">eHawk</label><br>
+
+                <input type="radio" id="rex"
+                    name="Tesloop_car_name"
+                    value="Rex">
+                <label for="rex">Rex</label><br>
+
+                <input type="radio" id="bravo"
+                    name="Tesloop_car_name"
+                    value="Bravo">
+                <label for="bravo">HiHo Silver</label><br>
+
+                <input type="radio" id="deuxy"
+                    name="Tesloop_car_name"
+                    value="Deuxy">
+                <label for="deuxy">Deuxy</label><br><br>
+            </div>
+            
+            <div>
+                Vehicle Model:<br>
+                <p>Eg: Model S, Model X, Model 3</p>
+                     <input type="radio" id="models"
+                        name="vehicle_model"
+                        value="model_s">
+                     <label for="models">Model S</label><br>
+
+                    <input type="radio" id="modelx"
+                        name="vehicle_model"
+                        value="model_x">
+                     <label for="modelx">Model X</label><br>
+
+                    <input type="radio" id="model3"
+                        name="vehicle_model"
+                        value="model_3">
+                     <label for="modelx">Model 3</label><br><br>
+            </div>
+            
+            Vehicle Year:<br>
+            <input type="number" id="vehicle_year"
+                   min="1900"
+                   max="3000"
+                   step="1"
+                   name="vehicle_year"><br><br>
+            
+            Vehicle Odometer (mi):<br>
+            <input type="number"
+                   id="vehicle_odometer_mi"
+                   min="0"
+                   max="500000"><br><br>
+            
+            <h2>Tire</h2>
+            
+            Tire Brand:
+            <p>Eg: Bridgestone, Michelin, Goodyear, etc.</p>
+            <input type="text"
+                   id="tire_brand"><br><br>
+            
+            Tire Model:<br>
+            <p>Eg: Assurance</p>
+            <input type="text"
+                   id="tire_model"><br><br><br>
+            
+            FRONT Tires Size:<br>
+            <p>Eg: 245/60R16 (Front created to address vehicles with staggered fitment)</p>
+            <input type="text"
+                   id=front_tires_size><br><br>
+            
+            REAR Tires Size:<br>
+            <p>Eg: 245/60R16 (Rear created to address vehicles with staggered fitment)</p>
+            <input type="text"
+                   id=rear_tires_size><br><br>
+            
+            <h2>Service</h2>
+            
+            Service:<br>
+            <p>What services were performed for each tire position?</p>
+            
+            <div name="services_checkbox">
+                <table cellspacing="15">
+                    <tr>
+                        <th>Wheel Position</th>
+                        <th>None</th>
+                        <th>Tire Inspection</th>
+                        <th>Tire Replacement</th>
+                        <th>Tire Repair</th>
+                        <th>Brake Replacement</th>
+                        <th>Wheel/Rim Refurbish</th>
+                        <th>Other Services</th>
+                    </tr>
+                    
+                    <tr name="LF">
+                        <td>Left Front</td>
+                        <td><input type="checkbox" name="lf_none" value="none"></td>
+                        <td><input type="checkbox" name="lf_tire_inspection" value="lf_tire_inspection"></td>
+                        <td><input type="checkbox" name="lf_tire_replacement" value="lf_tire_replacement"></td>
+                        <td><input type="checkbox" name="lf_tire_repair" value="lf_tire_repair"></td>
+                        <td><input type="checkbox" name="brake_replacement" value="lf_brake_replacement"></td>
+                        <td><input type="checkbox" name="lf_wheel_rim_refurbish" value="lf_wheel_rim_refurbish"></td>
+                        <td><input type="checkbox" name="lf_other_services" value="lf_other_services"></td>
+                    </tr>
+                    
+                    <tr name="RF">
+                        <td>Right Front</td>
+                        <td><input type="checkbox" name="rf_none" value="none"></td>
+                        <td><input type="checkbox" name="rf_tire_inspection" value="rf_tire_inspection"></td>
+                        <td><input type="checkbox" name="rf_tire_replacement" value="rf_tire_replacement"></td>
+                        <td><input type="checkbox" name="rf_tire_repair" value="rf_tire_repair"></td>
+                        <td><input type="checkbox" name="brake_replacement" value="rf_brake_replacement"></td>
+                        <td><input type="checkbox" name="rf_wheel_rim_refurbish" value="rf_wheel_rim_refurbish"></td>
+                        <td><input type="checkbox" name="rf_other_services" value="rf_other_services"></td>
+                    </tr>
+                    
+                    <tr name="RR">
+                        <td>Right Rear</td>
+                        <td><input type="checkbox" name="rr_none" value="none"></td>
+                        <td><input type="checkbox" name="rr_tire_inspection" value="rr_tire_inspection"></td>
+                        <td><input type="checkbox" name="rr_tire_replacement" value="rr_tire_replacement"></td>
+                        <td><input type="checkbox" name="rr_tire_repair" value="rr_tire_repair"></td>
+                        <td><input type="checkbox" name="brake_replacement" value="rr_brake_replacement"></td>
+                        <td><input type="checkbox" name="rr_wheel_rim_refurbish" value="rr_wheel_rim_refurbish"></td>
+                        <td><input type="checkbox" name="rr_other_services" value="rr_other_services"></td>
+                    </tr>
+                    
+                    <tr name="LR">
+                        <td>Left Rear</td>
+                        <td><input type="checkbox" name="lr_none" value="none"></td>
+                        <td><input type="checkbox" name="lr_tire_inspection" value="lr_tire_inspection"></td>
+                        <td><input type="checkbox" name="lr_tire_replacement" value="lr_tire_replacement"></td>
+                        <td><input type="checkbox" name="lr_tire_repair" value="lr_tire_repair"></td>
+                        <td><input type="checkbox" name="brake_replacement" value="lr_brake_replacement"></td>
+                        <td><input type="checkbox" name="lr_wheel_rim_refurbish" value="lr_wheel_rim_refurbish"></td>
+                        <td><input type="checkbox" name="lr_other_services" value="lr_other_services"></td>
+                    </tr>
+                </table><br>
+            </div>
+            
+            Other Services:<br>
+                <input type="checkbox" value="tire_rotation"> Tire Rotation<br>
+                <input type="checkbox" value="wheel_alignment"> Wheel Alignment<br>
+                <input type="checkbox" value="mounting_balancing"> Mounting and Balancing<br>
+                <input type="checkbox" value="other"> Other<br>
+                <input type="checkbox" value="none"> None<br><br>
+
+            
+            
+            
+            
+        
+        
+        
+        
+        </form>
+    </body>
+</html>
